@@ -52,7 +52,11 @@ try {
     response_format: { type: "json_object" },
   });
 
-  console.log(chatCompletion.choices[0].message.content);
+  if (chatCompletion?.choices?.[0]) {
+    console.log(chatCompletion.choices[0].message.content);
+  } else {
+    console.log("response", chatCompletion.choices);
+  }
 } catch (err) {
   console.error("response error", err);
 }
