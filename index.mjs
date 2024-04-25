@@ -54,5 +54,5 @@ try {
 
   console.log(chatCompletion.choices[0].message.content);
 } catch (err) {
-  console.err("response error", err);
+  console.error("response error", err);
 }

@@ -1,3 +1,4 @@
 # node playground with OpenAI
 
-## yarn start
+## start
+* yarn start
